@@ -1,0 +1,117 @@
+#include<stdio.h>
+int main(){
+int mainchoice,subchoice,qty;
+int total=0;
+char more;
+printf("------------------------------------Welcome to Fresh Bites---------------------------------------");
+do{
+    printf("\n\nPress 1 for Pastries");
+    printf("\n\nPress 2 for Cold Drinks");
+    printf("\n\nPress 3 for Chips");
+    printf("\n\nPress 4 for Popcorn");
+    printf("\n\nPress 5 for Cookies");
+    printf("\n\nEnter your choice:");
+    scanf("%d",&mainchoice);
+    switch(mainchoice)
+    {
+    case 1://pastries
+        printf("............Pastries menu...................");
+        printf("\n1.Puff Pastry.........Rs30");
+        printf("\n2.Flaky Pastry..........Rs32");
+        printf("\n3.Shortcrust............Rs35");
+        printf("\n4.Filo Pastry..........Rs40");
+        printf("\n5.Choux Pastry..........Rs45");
+        printf("\n6Chocolate Pastry........Rs50");
+        printf("\nEnter pastry choice");
+        scanf("%d", &subchoice);
+        printf("Ente quantity");
+        scanf("%d", &qty);
+        if(subchoice == 1)
+                    total+=30*qty;
+        if(subchoice == 2)
+            total+=32*qty;
+        if(subchoice == 3)
+            total+=35*qty;
+        if(subchoice == 4)
+            total+=40*qty;
+        if(subchoice == 5)
+            total+=45*qty;
+        if(subchoice == 6)
+            total+=50*qty;
+        break;
+    case 2://Cold drinks
+        printf("\n..............Cold drinks menu.................");
+        printf("\n1.Coke.................Rs20");
+        printf("\n2.Sprite...............Rs20");
+        printf("\n3.Pepsi.............Rs30");
+        printf("ENter drink choice");
+        scanf("%d", &subchoice);
+        printf("\nEnter quantity");
+        scanf("%d", &qty);
+        if(subchoice >= 1 && subchoice<=2)
+            total+=20*qty;
+        if(subchoice == 3)
+            total+=30*qty;
+        break;
+    case 3://Chips
+        printf("................Chips Menu..................");
+        printf("\n1.Lays...................Rs10");
+        printf("\n2.Kurkure...............Rs15");
+        printf("\n2.Bingo.................Rs20");
+        printf("\nEnter chips choice: ");
+        scanf("%d", &subchoice);
+        printf("\nEnter quantity");
+        scanf("%d", &qty);
+        if(subchoice == 1)
+                    total+=10*qty;
+        else if(subchoice == 2)
+            total+=15*qty;
+            else if(subchoice == 3)
+                total+=20*qty;
+            break;
+    case 4://Popcorn
+        printf("\n...................Popcorn menu.................");
+        printf("\n1.Small...................Rs30");
+        printf("\n2.Medium....................Rs50");
+        printf("\n3.Large....................Rs70");
+        printf("\nEnter popcorn choice");
+        scanf("%d", &subchoice);
+        printf("\nEnter quantity ");
+        scanf("%d", &qty);
+        if(subchoice == 1)
+            total+=30*qty;
+            if(subchoice == 2)
+                total+=50*qty;
+                if(subchoice == 3)
+                    total+=70*qty;
+                break;
+    case 5://cookies
+        printf("\n...............Cookies menu..........................");
+        printf("\n1.Chocolate cookie.............Rs25");
+        printf("\n2.Butter cookie...................Rs20");
+        printf("\n3.Oat cookie....................Rs30");
+        printf("\nEnter Cookie choice");
+        scanf("%d", &subchoice);
+        printf("\nEnter quantity");
+        scanf("%d", &qty);
+        if(subchoice == 1)
+            total+=25*qty;
+            if(subchoice == 2)
+                total+=20*qty;
+            if(subchoice == 3)
+                total+=30*qty;
+            break;
+    default:
+        printf("\nInvalid main menu choice! ");
+                    }
+                    printf("\nDo you want to place more orders?(Y/N):");
+                    scanf(" %c", &more);
+
+}while(more == 'Y'|| more == 'y');
+printf("\n\n*************************Final Bill************************************");
+printf("\nTotal Amount to be paid:Rs.%d",total);
+printf("\n*************************************************************************");
+printf("\nThank You!Visit Again");
+printf("\n**********************************************************");
+return 0;
+}
