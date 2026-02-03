@@ -16,15 +16,15 @@ do{
     {
     case 1://pastries
         printf("............Pastries menu...................");
-        printf("\n1.Puff Pastry.........Rs30");
-        printf("\n2.Flaky Pastry..........Rs32");
-        printf("\n3.Shortcrust............Rs35");
-        printf("\n4.Filo Pastry..........Rs40");
-        printf("\n5.Choux Pastry..........Rs45");
-        printf("\n6Chocolate Pastry........Rs50");
+        printf("\n1.Puff Pastry\tRs30");
+        printf("\n2.Flaky Pastry\tRs32");
+        printf("\n3.Shortcrust\tRs35");
+        printf("\n4.Filo Pastry\tRs40");
+        printf("\n5.Choux Pastry\tRs45");
+        printf("\n6Chocolate Pastry\tRs50");
         printf("\nEnter pastry choice");
         scanf("%d", &subchoice);
-        printf("Ente quantity");
+        printf("\nEnter quantity");
         scanf("%d", &qty);
         if(subchoice == 1)
                     total+=30*qty;
@@ -41,10 +41,10 @@ do{
         break;
     case 2://Cold drinks
         printf("\n..............Cold drinks menu.................");
-        printf("\n1.Coke.................Rs20");
-        printf("\n2.Sprite...............Rs20");
-        printf("\n3.Pepsi.............Rs30");
-        printf("ENter drink choice");
+        printf("\n1.Coke\tRs20");
+        printf("\n2.Sprite\tRs20");
+        printf("\n3.Pepsi\tRs30");
+        printf("\nEnter drink choice");
         scanf("%d", &subchoice);
         printf("\nEnter quantity");
         scanf("%d", &qty);
@@ -55,9 +55,9 @@ do{
         break;
     case 3://Chips
         printf("................Chips Menu..................");
-        printf("\n1.Lays...................Rs10");
-        printf("\n2.Kurkure...............Rs15");
-        printf("\n2.Bingo.................Rs20");
+        printf("\n1.Lays\tRs10");
+        printf("\n2.Kurkure\tRs15");
+        printf("\n2.Bingo\tRs20");
         printf("\nEnter chips choice: ");
         scanf("%d", &subchoice);
         printf("\nEnter quantity");
@@ -71,9 +71,9 @@ do{
             break;
     case 4://Popcorn
         printf("\n...................Popcorn menu.................");
-        printf("\n1.Small...................Rs30");
-        printf("\n2.Medium....................Rs50");
-        printf("\n3.Large....................Rs70");
+        printf("\n1.Small\tRs30");
+        printf("\n2.Medium\tRs50");
+        printf("\n3.Large\tRs70");
         printf("\nEnter popcorn choice");
         scanf("%d", &subchoice);
         printf("\nEnter quantity ");
@@ -87,9 +87,9 @@ do{
                 break;
     case 5://cookies
         printf("\n...............Cookies menu..........................");
-        printf("\n1.Chocolate cookie.............Rs25");
-        printf("\n2.Butter cookie...................Rs20");
-        printf("\n3.Oat cookie....................Rs30");
+        printf("\n1.Chocolate cookie\tRs25");
+        printf("\n2.Butter cookie\tRs20");
+        printf("\n3.Oat cookie\tRs30");
         printf("\nEnter Cookie choice");
         scanf("%d", &subchoice);
         printf("\nEnter quantity");
@@ -115,3 +115,4 @@ printf("\nThank You!Visit Again");
 printf("\n**********************************************************");
 return 0;
 }
+
